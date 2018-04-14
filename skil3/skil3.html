@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css">
+		<title>Skilverkefni 3</title>
+
+	</head>
+
+	<body>
+		<canvas id="myCanvas"></canvas>
+		<div class="columns" style="float: right;">
+			<div class="column">
+				<label class="label">Pen Size</label>
+				<input type="number" class="input" placeholder="pen size" id="pointsize" onkeyup="takePoint()" onclick="takePoint()" max="5" min="0">
+				<p>from 1 to 5</p>
+			</div>
+
+			<div class="column">
+				<a class="button is-danger" onclick="reset()">Reset</a>
+				<img src="" id="mirror" class="canvas__mirror" />
+				<a href="#" class="button" id="btn-download" download="art.png">Download</a>
+			</div>
+		</div>
+
+		<script src="skil3.js"></script>
+	</body>
+</html>
